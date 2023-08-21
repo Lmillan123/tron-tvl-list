@@ -23,7 +23,7 @@ Follow the steps below to add a new Defi project：
 * `homepage`[Required]: the home page of your Defi project.
 * `MarketCapLink`[Optional]: so your TVL can appear on Coinmarketcap or Coingecko. (https://coinmarketcap.com/currencies/#TOKEN or https://www.coingecko.com/en/coins/#TOKEN)
 
-* `url`[Required]: the url to get your specific Defi project's TVL, the result should be JSON format:
+* `url'[https://apilist.tronscan.org/api/tvl]: the url to get your specific Defi project's TVL, the result should be JSON format:
 ```
 {
     "tvl": 3298643126.37
@@ -31,7 +31,7 @@ Follow the steps below to add a new Defi project：
 ```
 where `3298643126.37` unit is `$` (dollar), calculates as the sum of all `(StakedTokenAmount-BorrowedTokenAmount) * currentTokenPrice`.
 
-* `category`[Required]: (Yield/DEX/Lending/Minting/Assets/Insurance/Options/Indexes/Staking) Please choose only one.
+* `category`[Required]: (Yield/DEX/Lending/Minting/Assets/Insurance/Options/Indexes/Staking) staking
 
 * `poolAddresses`[Required]: the pool contract addresses related with this Defi project.
 
